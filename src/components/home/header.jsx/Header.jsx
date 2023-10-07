@@ -24,7 +24,8 @@ const Header = () => {
     `url(https://i.ibb.co/K9NS966/headway-F2-KRf-Qf-Cqw-unsplash.jpg)` ,
     }}
     >
-    <div className="hero-overlay bg-opacity-60 backdrop-blur-[0.75px]"></div>
+    <div className="hero-overlay bg-opacity-60 backdrop-blur-[0.75px]  bg-gradient-to-b from-black/0 via-black/0
+     to-black/50"></div>
       <div className="z-30 w-full p-6 lg:py-8">
         <Navbar></Navbar>
       </div>

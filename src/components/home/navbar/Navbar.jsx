@@ -36,8 +36,9 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar items-center bg-transparent text-white lg:px-24 lg:py-6">
+        
         <div className="navbar-start">
-          <NavLink to="/" className="btn btn-ghost normal-case text-xl">
+          <NavLink to="/" className="btn btn-ghost normal-case text-xl focus:ring-0">
             <img
               className="w-28 lg:w-32 relative -top-8 lg:-top-10"
               src="https://i.ibb.co/G0C6Lkk/N-2-removebg-preview.png"
@@ -103,6 +104,7 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
+
       </nav>
     </>
   );

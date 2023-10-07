@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "title": "Conferences and Seminars",
+      "image": "https://i.ibb.co/2h4N3YQ/alexandre-pellaes-6v-Ajp0psc-X0-unsplash.jpg",
+      "description": "Experience the power of knowledge-sharing and networking at our professionally curated Conferences and Seminars. Whether you're aiming to foster industry connections, share groundbreaking insights, or discuss key trends, our events are designed to inspire and educate. Our team ensures seamless execution, leaving you free to engage with your audience. Book now to make your mark on the industry. Prices starting from $2,500.",
+      "price": 2500
+    },
+    {
+      "id": 2,
+      "title": "Trade Shows and Expo",
+      "image": "https://i.ibb.co/Vvv1cdx/william-alvarez-r82-Y1955-MJs-unsplash.jpg",
+      "description": "Step into the spotlight and showcase your brand like never before with our Trade Shows and Expos. Our events attract a diverse audience of potential clients and partners, providing the perfect platform to demonstrate your products or services. Let us transform your vision into a captivating experience. Book today and set the stage for success. Prices starting from $3,000.",
+      "price": 3000
+    },
+    {
+      "id": 3,
+      "title": "Team Building Workshops",
+      "image": "https://i.ibb.co/zbg28KW/product-school-Gajr-OEN6m4-unsplash.jpg",
+      "description": "Unlock the full potential of your team with our Team Building Workshops. Strengthen bonds, enhance communication, and boost productivity through engaging activities and expert guidance. Our workshops are tailored to your specific needs, ensuring a positive impact on your team's dynamics. Book now to ignite collaboration and innovation. Prices starting from $1,800.",
+      "price": 1800
+    },
+    {
+      "id": 4,
+      "title": "Corporate Meetings",
+      "image": "https://i.ibb.co/wLTDDsx/jeremy-mcgilvrey-J9u-JU-Im-Jbo-unsplash.jpg",
+      "description": "Elevate your corporate gatherings with our meticulously planned Corporate Meetings. Whether it's a board meeting, strategy session, or annual review, we create the perfect environment for productive discussions. Our attention to detail ensures a seamless experience, allowing you to focus on your agenda. Book now for a meeting that makes a difference. Prices starting from $1,200.",
+      "price": 1200
+    },
+    {
+      "id": 5,
+      "title": "Award Ceremonies",
+      "image": "https://i.ibb.co/RQ4ytgK/axville-8vhe-Ri6dbaw-unsplash.jpg",
+      "description": "Celebrate excellence and achievements with our captivating Award Ceremonies. From red carpet arrivals to elegant presentations, we make every moment special. Honor your outstanding individuals or teams in a memorable setting that leaves a lasting impression. Book now to create a night of recognition and inspiration. Prices starting from $2,800.",
+      "price": 2800
+    },
+    {
+      "id": 6,
+      "title": "Product Launches",
+      "image": "https://i.ibb.co/gWCfHX9/alexandre-pellaes-U2-EXZ1-S5vp4-unsplash.jpg",
+      "description": "Unveil your latest innovations with flair and impact at our Product Launches. We understand the importance of a successful launch, and our team ensures every detail is perfect. From concept to execution, we create an unforgettable experience that puts your product in the spotlight. Book now to make a grand entrance into the market. Prices starting from $4,500.",
+      "price": 4500
+    }
+  ]
+  

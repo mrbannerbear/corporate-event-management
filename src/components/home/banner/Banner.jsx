@@ -12,7 +12,8 @@ const Banner = () => {
 
   return (
     <>
-        <div className="z-20 text-left text-neutral-content mt-28 lg:mt-44 lg:ml-12 lg:px-24 lg:py-12 p-8 static">
+        <div className="z-20 text-left text-neutral-content mt-28 lg:mt-44 lg:ml-12 lg:px-24 lg:py-12 p-8
+        ">
           <div className="max-w-md" data-aos="fade-right">
             <h1 className="mb-5 text-3xl lg:text-5xl font-bold">Redefining Corporate Events for a New Era</h1>
             <p className="mb-5 text-sm lg:text-base">
@@ -34,7 +35,6 @@ const Banner = () => {
           </NavLink>
             </div>
         </div>
-
     </>
   );
 };
