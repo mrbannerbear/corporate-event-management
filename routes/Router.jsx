@@ -5,6 +5,8 @@ import Error from "../src/components/mainLayout/Error";
 import EachService from "../src/components/EachService/EachService";
 import AboutUs from "../src/components/AboutUs/AboutUs";
 import ServicesRoute from "../src/components/ServicesRoute/ServicesRoute";
+import Account from "../src/components/Account/Account";
+import Plans from "../src/components/Plans/Plans";
 
 export const router = createBrowserRouter([
     {
@@ -27,6 +29,14 @@ export const router = createBrowserRouter([
             {
                 path: "/services",
                 element: <ServicesRoute></ServicesRoute>
+            },
+            {
+                path: "/account",
+                element: <Account></Account>
+            },
+            {
+                path: "/plans",
+                element: <Plans></Plans>
             }
         ]
     },
