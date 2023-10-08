@@ -1,3 +1,8 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+// import { NavLink } from 'react-router-dom';
+
+AOS.init({ duration: 1500 });
 /* eslint-disable react/no-unescaped-entities */
 import Navbar from "../home/navbar/Navbar";
 
@@ -19,7 +24,7 @@ const AboutUs = () => {
         <div className="hero-content text-center text-neutral-content z-20 mt-28 lg:mt-44 lg:ml-12 lg:px-24 lg:py-12 p-8">
           <div className="max-w-4xl mx-auto">
             <p className="mb-5">
-              <p className="min-h-[50vh] mt-12 static">
+              <p className="min-h-[50vh] mt-12 static" data-aos="fade-up">
                 <h1 className="text-4xl font-bold my-5">
                   About Us: Crafting Extraordinary Corporate Experiences
                 </h1>
@@ -31,7 +36,7 @@ const AboutUs = () => {
                 leaders.
               </p>
 
-              <p className="min-h-[50vh] mt-12 static">
+              <p className="min-h-[50vh] mt-12 static" data-aos="fade-up">
                 <h1 className="text-4xl font-bold my-5">Our Story</h1>
                 Our story is a testament to our commitment to excellence. It
                 started with a small team of passionate event enthusiasts who
@@ -41,7 +46,7 @@ const AboutUs = () => {
                 for its dedication to creating unforgettable moments.
               </p>
 
-              <p className="min-h-[50vh] mt-12 static">
+              <p className="min-h-[50vh] mt-12 static" data-aos="fade-up">
                 <h1 className="text-4xl font-bold my-5">
                   Tailored Experiences
                 </h1>
@@ -54,7 +59,7 @@ const AboutUs = () => {
                 detail is aligned with your goals.
               </p>
 
-              <p className="min-h-[50vh] mt-12 static">
+              <p className="min-h-[50vh] mt-12 static" data-aos="fade-up">
                 <h1 className="text-4xl font-bold my-5">Our Craft for You</h1>
                 Your success is a driving force. We take pride in the pivotal
                 role we play in helping businesses thrive through exceptional
@@ -65,7 +70,7 @@ const AboutUs = () => {
                 brand.
               </p>
 
-              <p className="min-h-[50vh] mt-12 static">
+              <p className="min-h-[50vh] mt-12 static" data-aos="fade-up">
                 <h1 className="text-4xl font-bold my-5">
                   Elevating Connections
                 </h1>
@@ -77,7 +82,7 @@ const AboutUs = () => {
                 connections flourish.
               </p>
 
-              <p className="min-h-[50vh] mt-12 static">
+              <p className="min-h-[50vh] mt-12 static" data-aos="fade-up">
                 <h1 className="text-4xl font-bold my-5">
                   Join Us in Our Journey
                 </h1>
@@ -88,7 +93,7 @@ const AboutUs = () => {
                 memories that inspire, connect, and drive success.
               </p>
 
-              <p className="min-h-[50vh] mt-12 static">
+              <p className="min-h-[50vh] mt-12 static" data-aos="fade-up">
                 <h1 className="text-4xl font-bold my-5">Contact Us Today</h1>
                 <p className="flex flex-col">
                   <p>

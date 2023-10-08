@@ -1,9 +1,9 @@
 import Aos from "aos";
-import FeaturedIn from "./featuredIn/FeaturedIn";
 import Footer from "./footer/Footer";
 import Header from "./header.jsx/Header";
 import ServicesHome from "./services/ServicesHome";
 import Credibility from "./credibility/Credibility";
+import WorkedWith from "./workedWith/WorkedWith";
 
 Aos.init()
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
             <Header></Header>
             <ServicesHome></ServicesHome>
             <Credibility></Credibility>
-            <FeaturedIn></FeaturedIn>
+            <WorkedWith></WorkedWith>
             <Footer></Footer>
         </div>
     );
