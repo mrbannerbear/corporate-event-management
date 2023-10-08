@@ -19,7 +19,8 @@ const WorkedWith = () => {
      to-black/50"
         ></div>
         <div
-          className="hero-content text-center text-neutral-content z-20 mt-28 lg:mt-44 lg:ml-12 lg:px-24 lg:py-12 p-8"
+          className="hero-content text-center text-neutral-content mx-auto w-11/12
+           z-20 mt-28 lg:mt-44 lg:ml-12 lg:px-24 lg:py-12 p-8"
           data-aos="fade-up"
         >
           <div className="max-w-4xl mx-auto static">

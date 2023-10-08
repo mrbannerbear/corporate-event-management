@@ -29,7 +29,7 @@ const ServicesHome = () => {
         <div className="hero-content text-center text-neutral-content z-50">
           <div className="max-w-3xl py-24 lg:py-56">
             <h1 className="text-4xl font-bold mb-6" data-aos="fade-out">
-              Our Sevices
+              Our Services
             </h1>
             <p data-aos="fade-out">
               Tailored, curated, designed & implemented- all per your

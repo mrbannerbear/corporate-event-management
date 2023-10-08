@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import AOS from "aos";
@@ -27,22 +28,17 @@ const ServicesRoute = () => {
           className="hero-overlay bg-opacity-60 bg-gradient-to-t from-black/0 via-black/0 mix-blend-normal
      to-black/20 backdrop-blur-[2px]"
         ></div>
+
          <div className="z-30 w-full p-6 lg:py-8">
           <Navbar></Navbar>
         </div>
-        <div className="hero-content text-center mx-auto w-11/12
+
+        <div className="hero-content text-center mx-auto w-11/12 flex flex-col
          text-neutral-content z-20 mt-28 lg:mt-44 lg:ml-12 lg:px-24 lg:py-12 p-8">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl font-bold mb-6">
-              Our Sevices
+              Events We Manage
             </h1>
-            <p>
-              Tailored, curated, designed & implemented- all per your
-              requirements. <br />
-              With our team of marketing & design experts, we are able to build
-              state-of-the-art events that leave a lasting impression on our
-              clients & their guests.
-            </p>
 
             <div className="mt-12 lg:mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
               {services.map((service) => (
@@ -59,10 +55,24 @@ const ServicesRoute = () => {
               ))}
             </div>
           </div>
+
+          <div className="mt-24 pb-12">
+          <h1 className="text-2xl font-bold mb-6">
+              For Every Event:
+            </h1>
+            <ul className="text-center flex justify-center">
+                <li>Cutting-edge technology</li>
+                <li>Breathtaking presentations</li>
+                <li>Fully air-conditioned services</li>
+                <li>Fine dining services</li>
+                <li>...And other services per our clients' requirements</li>
+            </ul>
+          </div>
         </div>
+        
+
       </div>
 
-      <div></div>
     </>
   );
 };
