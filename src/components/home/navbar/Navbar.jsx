@@ -63,8 +63,8 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end hidden lg:flex gap-3">
-        <span className="bg-white p-1 rounded-full"><img className="w-[40px] h-[40px]" src="/public/assets/apple-11.svg" alt="" /></span>
-          <span className="text-[10px]">abcodjidhi@gmail.com</span>
+        {/* <span className="bg-white p-1 rounded-full"><img className="w-[40px] h-[40px]" src="/public/assets/apple-11.svg" alt="" /></span>
+          <span className="text-[10px]">abcodjidhi@gmail.com</span> */}
           <NavLink>
             <button className="border-white border-[1.5px] px-3 py-1 rounded-sm text-xs">
               Log In

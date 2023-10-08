@@ -39,6 +39,10 @@ const Plans = () => {
             <h1 className="text-4xl font-bold mb-6">
               Plans
             </h1>
+
+            <div>
+                
+            </div>
           </div>
 
         </div>

@@ -41,7 +41,7 @@ const ServicesHome = () => {
 
             <div className="mt-12 lg:mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
               {services.map((service) => (
-                <NavLink key={service.id} to={`/services/${service.id}`}>
+                <div key={service.id}>
                   <div className="flex flex-col justify-center w-full lg:w-60 rounded-sm shadow-lg backdrop-blur-sm pb-6">
                     <img
                       className="h-40 w-60 mx-auto rounded-t-sm"
@@ -49,8 +49,10 @@ const ServicesHome = () => {
                       alt=""
                     />
                     <p className="my-3">{service.title}</p>
+                    <p><small>Starting from ${service.price}</small></p>
+                    <p><small><NavLink className="underline" to={`/services/${service.id}`}>View Details</NavLink></small></p>
                   </div>
-                </NavLink>
+                </div>
               ))}
             </div>
           </div>

@@ -7,6 +7,8 @@ import AboutUs from "../src/components/AboutUs/AboutUs";
 import ServicesRoute from "../src/components/ServicesRoute/ServicesRoute";
 import Account from "../src/components/Account/Account";
 import Plans from "../src/components/Plans/Plans";
+import Register from "../src/auth/register/Register";
+import Login from "../src/auth/login/Login";
 
 export const router = createBrowserRouter([
     {
@@ -37,6 +39,14 @@ export const router = createBrowserRouter([
             {
                 path: "/plans",
                 element: <Plans></Plans>
+            },
+            {
+                path: "/registration",
+                element: <Register></Register>
+            },
+            {
+                path: "/login",
+                element: <Login></Login>
             }
         ]
     },

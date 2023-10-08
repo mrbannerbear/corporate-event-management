@@ -26,7 +26,7 @@ const Account = () => {
       >
         <div
           className="hero-overlay bg-opacity-60 bg-gradient-to-t from-black/0 via-black/0 mix-blend-normal
-     to-black/20 backdrop-blur-[2px]"
+     to-black/20 backdrop-blur-[6px]"
         ></div>
 
          <div className="z-30 w-full p-6 lg:py-8">
