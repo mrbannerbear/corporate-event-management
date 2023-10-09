@@ -146,7 +146,17 @@ const Navbar = () => {
               ))}
               <li>
                 <a className="bg-transparent">
-                  <button> Log In</button>
+                {!user ?
+          <NavLink to="/login">
+            <button className="rounded-sm text-xs">
+              Log In
+            </button>
+          </NavLink>
+          :
+          <button onClick={HandleLogOut}
+          className="rounded-sm text-xs">
+              Log Out
+            </button>}
                 </a>
               </li>
             </ul>

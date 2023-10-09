@@ -1,8 +1,26 @@
-# React + Vite
+# Nexus Gatherings Event Management
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Assignment-09
 
-Currently, two official plugins are available:
+## [Live Link](https://corporate-event-manageme-2db77.web.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Short Description
+
+The project is on a sample website for event management services. This website, in particular, is for corporate events.
+
+The website has been built using ReactJS with React Router, Firebase, Tailwind CSS, DaisyUI inegrated. Other packages include React Hot-Toast and AOS Package.
+
+Google Firebase has been used for authentication & hosting. 
+
+
+## Features
+
+- A website for corporate event management that includes multiple services & USPs (Unique Selling Propositions)
+- Interactive, visually-pleasing design
+- Has multiple routes including two private routes
+- Includes authentication (Registrtion & Login) with email-password & Google
+- Responsive design for computers, tablets & phones.
+
+
+
+

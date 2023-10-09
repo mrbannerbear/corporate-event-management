@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useContext,  } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { AuthProvider } from "../../../context/AuthContext";
@@ -5,10 +6,11 @@ import { updateProfile } from "firebase/auth";
 import { auth } from "../../../firebase/firebase.config";
 import toast, { Toaster } from "react-hot-toast";
 import { FcGoogle } from "react-icons/fc";
+import { useState } from "react";
 // import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 const Register = () => {
-//   const [registered, setRegistered] = useState(false);
+  const [registered, setRegistered] = useState(false);
   const { registerUser, googleSignIn } = useContext(AuthProvider);
   const navigate = useNavigate()
   const location = useLocation()
@@ -35,7 +37,7 @@ const Register = () => {
       .then((res) => {
         console.log(res);
          toast("Account created successfully");
-        // setRegistered(true);
+        setRegistered(true);
         updateProfile(auth.currentUser, {
           displayName: username,
           photoURL: url,
@@ -79,64 +81,64 @@ const Register = () => {
               <form onSubmit={HandleRegistration}>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Username</span>
+                    <span className="label-text text-black">Username</span>
                   </label>
                   <input
                     type="text"
                     placeholder="username"
                     name="name"
-                    className="input input-bordered rounded-sm"
+                    className="input input-bordered rounded-sm bg-white/80 text-black"
                     required
                   />
                 </div>
 
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Image URL</span>
+                    <span className="label-text text-black">Image URL</span>
                   </label>
                   <input
                     type="url"
                     placeholder="url"
                     name="url"
-                    className="input input-bordered rounded-sm"
+                    className="input input-bordered rounded-sm bg-white/80 text-black"
                     required
                   />
                 </div>
 
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Email</span>
+                    <span className="label-text text-black">Email</span>
                   </label>
                   <input
                     type="email"
                     placeholder="email"
                     name="email"
-                    className="input input-bordered rounded-sm"
+                    className="input input-bordered rounded-sm bg-white/80 text-black"
                     required
                   />
                 </div>
 
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Password</span>
+                    <span className="label-text text-black">Password</span>
                   </label>
                   <input
                     type="password"
                     placeholder="password"
                     name="password"
-                    className="input input-bordered rounded-sm"
+                    className="input input-bordered rounded-sm bg-white/80 text-black"
                     required
                   />
                 </div>
 
                 <div className="form-control mt-3 w-full">
-                  <button className="rounded-sm border-[1.5px] w-max mx-auto border-black/50 px-3 py-1">
+                  <button className="rounded-sm border-[1.5px] w-max mx-auto border-black/50 px-3 py-1 text-black">
                     Register
                   </button>
                 </div>
               </form>
 
-              <div className="text-center text-sm">
+              <div className="text-center text-sm text-black">
                 <small>
                   Already have an account?{" "}
                   <NavLink to="/login" className="underline">
@@ -145,7 +147,7 @@ const Register = () => {
                 </small>
               </div>
 
-              <div className="text-center">
+              <div className="text-center text-black">
                 <h3>
                   <small>Or, sign up with</small>:
                 </h3>

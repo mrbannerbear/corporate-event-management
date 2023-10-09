@@ -49,6 +49,7 @@ const ServicesHome = () => {
                       alt=""
                     />
                     <p className="my-3">{service.title}</p>
+                    <p><small className="text-[11px] text-center">{service.brief}</small></p>
                     <p><small>Starting from ${service.price}</small></p>
                     <p><small><NavLink className="underline" to={`/services/${service.id}`}>View Details</NavLink></small></p>
                   </div>

@@ -51,33 +51,33 @@ const Login = () => {
         ></div>
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="card rounded-sm w-full shadow-2xl bg-neutral-300/60">
-            <form className="card-body" onSubmit={HandleLogin}>
+            <form className="card-body text-black" onSubmit={HandleLogin}>
               <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Email</span>
+                <label className="label ">
+                  <span className="label-text text-black">Email</span>
                 </label>
                 <input
                   type="email"
                   placeholder="email"
                   name="email"
-                  className="input input-bordered rounded-sm"
+                  className="input input-bordered rounded-sm bg-white/80 text-black"
                   required
                 />
               </div>
 
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Password</span>
+                  <span className="label-text text-black">Password</span>
                 </label>
                 <input
                   type="password"
                   placeholder="password"
                   name="password"
-                  className="input input-bordered rounded-sm"
+                  className="input input-bordered rounded-sm bg-white/80 text-black"
                   required
                 />
                 <label className="label">
-                  <a href="#" className="label-text-alt link link-hover">
+                  <a href="#" className="label-text-alt link link-hover text-black">
                     Forgot password?
                   </a>
                 </label>
@@ -96,7 +96,7 @@ const Login = () => {
                 </small>
               </div>
             </form>
-            <div className="text-center">
+            <div className="text-center text-black">
               <h3>
                 <small>Or, login with</small>:
               </h3>
