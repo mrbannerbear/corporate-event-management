@@ -43,9 +43,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C - `"12"`
 
-<i>Write your explanation here</i>
+<i>The answer "12" is not a number, but a string. In JavaScript, when a number and a string value are added, 'concatenation' occurs. This means when a number and string value are added using `+` operator, they attach to each other as if they are one value instead of adding. Here, the sum of 1 & "2" is an example of such a a case. So, the answer is "12" which is not a number in JavaScript sense.</i>
 
 </p>
 </details>
@@ -69,9 +69,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A - ``['🍕', '🍫', '🥑', '🍔']``
 
-<i>Write your explanation here</i>
+<i>When an array is initialized, it is stored in the heap memory, & any modification done to it is done using its references in the call stack. So if a new variable is declared & the previous array is assigned to it, & some of the contents of the array are changed, they would change the contents of the original array as the variable is assigned to a reference of the original array. However in this question, the value of the key "favoriteFood" is initially food[0]. Then it is changed to "🍝". Here, no modification of the food array is occuring, rather a new data type, which is a string, has been assigned. Hence, the original 'food' array remains unchanged. So the answer is A.</i>
 
 </p>
 </details>
@@ -94,9 +94,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B - `Hi there, undefined`
 
-<i>Write your explanation here</i>
+<i>The key difference between 'null' & 'undefined' is that 'null' is set deliberately to acknowledge that there is no value. So it is a special case of data type. But 'undefined' means a variable has been declared but no data has been assigned to it. In this question, the function asks for a parameter 'name'. However, as no argument is passed when the function is called, the value of the parameter becomes undefined. It is to be noted that a parameter is one type of variable too. It is initially unassigned, & gets assigned to the value of the argument when the function is called. In this case, the answer will be B.</i>
 
 </p>
 </details>
@@ -122,9 +122,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C - 3
 
-<i>Write your explanation here</i>
+<i>In this question, we see that forEach array method has been applied on the array. The result is that for each value of the array being true, the value of 'count' will increase by 1. Although there are four values in the array, the first one is 0, which is a falsy. A falsy value is a value that gives false boolean value when compared. 0 is a falsy as its boolean value is false. Hence, for each 'num' being true, the value of 'count' increases by 1 which happens for 1, 2, 3 & not 0. So the answer is C.</i>
 
 </p>
 </details>
