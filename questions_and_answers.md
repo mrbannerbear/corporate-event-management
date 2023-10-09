@@ -18,9 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
-<h2>Answer- A: `{}`</h2>
-<i>Write your explanation here</i>
+#### Answer: A - `{}`
+
+<i>In this question, a variable is declared using 'let'. However in the next line, another variable 'greetign' is declared without using 'var', 'let' or 'const' keywords. When such keywords are not used for declaring a variable, the variable becomes global-scoped, so it still remains valid. In this case, an empty object is assigned to 'greetign'. Which means, the result will {}.</i>
 
 </p>
 </details>
