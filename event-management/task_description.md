@@ -46,7 +46,7 @@ Your website has to be related to event management. Here, we have given you a li
 
 5.  Clicking on the specific button will take the user to the service detail route. Each route should display detailed information of the service. What you will include in the detailed information is entirely upto you but make sure it is relevant. `DONE.`
 
-6.  The service detail route will be a private/protected route. Please make sure that if the user is not logged in, the private route redirects to the login page. `PENDING.`
+6.  The service detail route will be a private/protected route. Please make sure that if the user is not logged in, the private route redirects to the login page. `DONE.`
 
 7.  You Must implement Email and password based Authentication. This means, you will have to implement the Registration and the login page. Users should be able to toggle between Login and Registration view .`Upon successful login or registration, you must show a toast/alert. Do not use the browser alert`. `DONE.`
 
@@ -73,7 +73,7 @@ Your website has to be related to event management. Here, we have given you a li
 
 8.  Also, implement at least `one extra login` which could be (facebook, github, google, etc). `DONE.`
 
-9.  After reloading the page of a private route, the user should not be redirected to the login page.    `PENDING.`
+9.  After reloading the page of a private route, the user should not be redirected to the login page.    `DONE.`
 
 10. Once logged in, the user name, profile picture and the logout button should appear on the header. If the user clicks on the logout button, make sure to log him/her out.    `DONE.`
 

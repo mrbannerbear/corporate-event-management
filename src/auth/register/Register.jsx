@@ -52,6 +52,7 @@ const Register = () => {
     .then( res =>
         {
             console.log(res);
+            toast("Account created successfully");
             navigate(location?.state ? location.state : "/")
         }
     )

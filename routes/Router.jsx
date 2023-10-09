@@ -9,6 +9,7 @@ import Account from "../src/components/Account/Account";
 import Plans from "../src/components/Plans/Plans";
 import Register from "../src/auth/register/Register";
 import Login from "../src/auth/login/Login";
+import PrivateRoutes from "./PrivateRoutes";
 
 export const router = createBrowserRouter([
     {
@@ -22,7 +23,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/services/:id",
-                element: <EachService></EachService>
+                element: <PrivateRoutes><EachService></EachService></PrivateRoutes>
             },
             {
                 path: "/about",
@@ -34,11 +35,11 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/account",
-                element: <Account></Account>
+                element: <PrivateRoutes><Account></Account></PrivateRoutes>
             },
             {
                 path: "/plans",
-                element: <Plans></Plans>
+                element: <PrivateRoutes><Plans></Plans></PrivateRoutes>
             },
             {
                 path: "/registration",

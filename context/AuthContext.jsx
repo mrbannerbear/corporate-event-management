@@ -9,7 +9,7 @@ export const AuthProvider = createContext()
 const AuthContext = ({children}) => {
 
     const [user, setUser] = useState(null)
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
 
     // Services data
     const [services, setServices] = useState([]);
