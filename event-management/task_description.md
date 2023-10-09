@@ -77,27 +77,27 @@ Your website has to be related to event management. Here, we have given you a li
 
 10. Once logged in, the user name, profile picture and the logout button should appear on the header. If the user clicks on the logout button, make sure to log him/her out.    `DONE.`
 
-11. Add two more routes. Relevant to your website. These two routes will be private. You can put anything relevant to your site on these two routes.    `PENDING.`
+11. Add two more routes. Relevant to your website. These two routes will be private. You can put anything relevant to your site on these two routes.    `DONE.`
 
 12. Add a 404 page (not found page)    `PENDING.`
 
 ### :gift: Bonus Requirements:
 
-1. Answer to the questions given in the `questions_and_answers.md` file.
+1. Answer to the questions given in the `questions_and_answers.md` file. `DONE.`
 
-2. Add at least 5 meaningful Github commits. Meaningful `readme.md` file containing your website name and a link to your live site. Add at least five bullet points mentioning different features and functionalities of your website.
+2. Add at least 5 meaningful Github commits. Meaningful `readme.md` file containing your website name and a link to your live site. Add at least five bullet points mentioning different features and functionalities of your website. `PENDING.`
 
-3. Make the website responsive. Make sure the site looks different on desktop and mobile responsive. Tablet responsive is optional.
+3. Make the website responsive. Make sure the site looks different on desktop and mobile responsive. Tablet responsive is optional. `DONE.`
 
-4. Explore the [AOS package](https://www.npmjs.com/package/aos) and implement it your Homepage.
+4. Explore the [AOS package](https://www.npmjs.com/package/aos) and implement it your Homepage. `DONE.`
 
 ### :scroll: Additional information:
 
-1. Create your own fake data. You should load the data from a `.json` file.
-2. Host image on imgbb or any other hosting platform.
-3. You are free to use any css library you want.
-4. Environment variable is recommended but optional
-5. Try to host your site on Firebase (netlifiy host will need extra configuration)
+1. Create your own fake data. You should load the data from a `.json` file. `DONE.`
+2. Host image on imgbb or any other hosting platform. `DONE.`
+3. You are free to use any css library you want. `DONE.`
+4. Environment variable is recommended but optional `DONE.`
+5. Try to host your site on Firebase (netlifiy host will need extra configuration) `DONE.`
 
 ### :pushpin: What to submit
 

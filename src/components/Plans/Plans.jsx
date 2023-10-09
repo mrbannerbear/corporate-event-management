@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 // import { AuthProvider } from "../../../context/AuthContext";
 import Navbar from "../home/navbar/Navbar";
+import { NavLink } from "react-router-dom";
 
 AOS.init({
   duration: 1500,
@@ -40,6 +41,15 @@ const Plans = () => {
               Plans
             </h1>
 
+          <div>
+            You haven't added any events yet.
+          </div>
+          <div>
+            <button className="border px-3 py-1 my-3"><NavLink to="/services">Add Event</NavLink></button>
+          </div>
+
+          <div>
+          </div>
             <div>
                 
             </div>

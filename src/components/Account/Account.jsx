@@ -1,10 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
-// import { useContext } from "react";
+import { useContext } from "react"; 
 // import { NavLink } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-// import { AuthProvider } from "../../../context/AuthContext";
+import { AuthProvider } from "../../../context/AuthContext";
 import Navbar from "../home/navbar/Navbar";
+import { NavLink } from "react-router-dom";
 
 AOS.init({
   duration: 1500,
@@ -12,7 +13,14 @@ AOS.init({
 
 const Account = () => {
 
-    // const { services } = useContext(AuthProvider)
+    const { user, logOut } = useContext(AuthProvider)
+    console.log(user)
+
+    const HandleLogOut = () => {
+      logOut()
+      .then()
+      .catch()
+    }
 
   return (
     <>
@@ -37,10 +45,18 @@ const Account = () => {
          text-neutral-content z-20 mt-28 lg:mt-44 lg:ml-12 lg:px-24 lg:py-12 p-8">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl font-bold mb-6">
-              Welcome
+              Welcome, {user.displayName}!
             </h1>
           </div>
-
+              <div className="text-left">
+                  <h4>Email Address: {user.email}</h4>
+                  <h4>Billing Info: {user?.Billing ? user.Billing : "Not added"}</h4>
+                  <h4 className="text-center my-4"><NavLink to="/plans" className="underline">Your Events</NavLink></h4>
+              </div>
+              <div>
+                <button className="border px-3 py-1"
+                onClick={HandleLogOut}>Log Out</button>
+              </div>
         </div>
         
 

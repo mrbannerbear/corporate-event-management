@@ -1,10 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { AuthProvider } from "../../../context/AuthContext";
 import Navbar from "../home/navbar/Navbar";
+import "../ServicesRoute/ServicesRoute.css"
 
 AOS.init({
   duration: 1500,
@@ -14,11 +15,19 @@ const ServicesRoute = () => {
 
     const { services } = useContext(AuthProvider)
 
+    const [USPs, setUSPs] = useState([])
+    useEffect( () => {
+      fetch("/usp.json")
+      .then(res => res.json())
+      .then(data => setUSPs(data))
+    } , [])
+
+
   return (
     <>
 
       <div
-        className="hero min-h-screen place-items-start -z-10"
+        className="hero min-h-screen place-items-start -z-10 bg-fixed"
         style={{
           backgroundImage:
             "url(https://i.ibb.co/2FWcDcp/pexels-asia-culture-center-18366246.jpg)",
@@ -58,15 +67,18 @@ const ServicesRoute = () => {
 
           <div className="mt-24 pb-12">
           <h1 className="text-2xl font-bold mb-6">
-              For Every Event:
+              What Makes Us Unique 
             </h1>
-            <ul className="text-center flex justify-center">
-                <li>Cutting-edge technology</li>
-                <li>Breathtaking presentations</li>
-                <li>Fully air-conditioned services</li>
-                <li>Fine dining services</li>
-                <li>...And other services per our clients' requirements</li>
-            </ul>
+            <div className="text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-5 lg:gap-16 my-12">
+                {USPs.map(each => (
+                  <div key={each.title}
+                  className="hover:transition-all"
+                  id="usp-container">
+                    <h3 className="text-lg font-semibold">{each.title}</h3>
+                    <span className="text-sm my-2 each-des">{each.description}</span>
+                  </div>
+                ))}
+            </div>
           </div>
         </div>
         

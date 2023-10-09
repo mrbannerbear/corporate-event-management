@@ -25,19 +25,19 @@ const WorkedWith = () => {
         >
           <div className="max-w-4xl mx-auto static">
             <h1 className="text-5xl font-bold mb-12 lg:mb-24">We've Worked With</h1>
-            <p className="flex justify-center lg:gap-10 mt-10 flex-wrap">
+            <p className="flex justify-center gap-5 lg:gap-10 mt-10 flex-wrap">
                 <img className="w-40"
-                src="/public/assets/national-geographic-channel.svg" alt="" />
+                src="/assets/national-geographic-channel.svg" alt="" />
                 <img className="w-40"
-                src="/public/assets/forbes-2.svg" alt="" />
+                src="/assets/forbes-2.svg" alt="" />
                 <img className="w-40"
-                src="/public/assets/tesla-9.svg" alt="" />
+                src="/assets/tesla-9.svg" alt="" />
                 <img className="w-40"
-                src="/public/assets/apple-11.svg" alt="" />
+                src="/assets/apple-11.svg" alt="" />
                 <img className="w-40"
-                src="/public/assets/burberry-wordmark-1.svg" alt="" />
+                src="/assets/burberry-wordmark-1.svg" alt="" />
                 <img className="w-40"
-                src="/public/assets/emirates-group-logo.svg" alt="" />
+                src="/assets/emirates-group-logo.svg" alt="" />
             </p>
             <p className="text-end mb-24 lg:mb-56 text-xl mt-12">...And More</p>
           </div>

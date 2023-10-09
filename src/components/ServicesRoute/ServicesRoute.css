@@ -1,0 +1,17 @@
+ #usp-container{
+    @apply h-20 p-4 rounded-sm cursor-pointer
+ }
+
+ .each-des{
+    display: none;
+}
+
+#usp-container:hover .each-des{
+    display: inline;
+    transition-duration: 6s;
+}
+
+#usp-container:hover{
+    position: relative;
+    @apply backdrop-blur-lg z-50 shadow-md h-80
+}
