@@ -2,7 +2,7 @@
 
 ## Assignment-09
 
-## [Live Link](https://corporate-event-manageme-2db77.web.app)
+## [Live Link](https://corporate-event-manageme-2db77.web.app/)
 
 ## Short Description
 
