@@ -1,7 +1,42 @@
 /* eslint-disable react/no-unescaped-entities */
-import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { AuthProvider } from "../../../context/AuthContext";
+import { FcGoogle } from "react-icons/fc";
+import toast, { Toaster } from "react-hot-toast";
 
 const Login = () => {
+  const { loginUser, googleSignIn, user } = useContext(AuthProvider);
+  console.log(user);
+
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const HandleLogin = (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+
+    loginUser(email, password)
+      .then((res) => {
+        console.log(res);
+        toast("Login successful");
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch((err) => {console.log(err.code);
+    toast.error("Invalid email or password. Please try again.")});
+  };
+
+  const HandleGoogleAuth = () => {
+    googleSignIn()
+    .then(res => {
+        console.log(res);
+        toast("Login successful")
+        navigate(location?.state ? location.state : "/");
+    })
+    .catch()
+  }
+
   return (
     <>
       <div
@@ -16,21 +51,19 @@ const Login = () => {
         ></div>
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="card rounded-sm w-full shadow-2xl bg-neutral-300/60">
-            <form className="card-body">
+            <form className="card-body" onSubmit={HandleLogin}>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Username</span>
+                  <span className="label-text">Email</span>
                 </label>
                 <input
-                  type="text"
-                  placeholder="username"
-                  name="name"
+                  type="email"
+                  placeholder="email"
+                  name="email"
                   className="input input-bordered rounded-sm"
                   required
                 />
               </div>
-
-
 
               <div className="form-control">
                 <label className="label">
@@ -39,6 +72,7 @@ const Login = () => {
                 <input
                   type="password"
                   placeholder="password"
+                  name="password"
                   className="input input-bordered rounded-sm"
                   required
                 />
@@ -49,15 +83,38 @@ const Login = () => {
                 </label>
               </div>
               <div className="form-control mt-3 w-full">
-                <button className="rounded-sm border-[1.5px] w-max mx-auto border-black/50 px-3 py-1">Login</button>
+                <button className="rounded-sm border-[1.5px] w-max mx-auto border-black/50 px-3 py-1">
+                  Login
+                </button>
               </div>
               <div className="text-center text-sm">
-                <small>Don't have an account? <NavLink to="/registration" className="underline">Register for free.</NavLink></small>
+                <small>
+                  Don't have an account?{" "}
+                  <NavLink to="/registration" className="underline">
+                    Register for free.
+                  </NavLink>
+                </small>
               </div>
             </form>
+            <div className="text-center">
+              <h3>
+                <small>Or, login with</small>:
+              </h3>
+              <div className="flex justify-center pt-3 pb-6">
+                <button onClick={HandleGoogleAuth}
+                  className="border-[1.5px] border-black/50 text-black/50 rounded-sm flex justify-center gap-[6px] items-center
+            px-3 py-1"
+                >
+                  <FcGoogle className="text-xl"></FcGoogle>
+                  <span>Google</span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <Toaster position="bottom-center" reverseOrder={false}
+      ></Toaster>
     </>
   );
 };

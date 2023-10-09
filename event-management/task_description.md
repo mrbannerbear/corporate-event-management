@@ -36,21 +36,21 @@ Your website has to be related to event management. Here, we have given you a li
 
 ### :writing_hand: Main Requirements
 
-1.  Make sure your design and website idea is unique. First, finalize your idea (what type of website you want to build). Then google the site design or visit `themeforest` to get your website idea. [You can visit this blog to collect free resources for your website](https://bootcamp.uxdesign.cc/free-images-and-resources-collection-for-website-c77f2fc46ce5). However, your website :x: `can not be related to your previous assignments or any demo project displayed in the course or in our conceptual sessions` :x:.
+1.  Make sure your design and website idea is unique. First, finalize your idea (what type of website you want to build). Then google the site design or visit `themeforest` to get your website idea. [You can visit this blog to collect free resources for your website](https://bootcamp.uxdesign.cc/free-images-and-resources-collection-for-website-c77f2fc46ce5). However, your website :x: `can not be related to your previous assignments or any demo project displayed in the course or in our conceptual sessions` :x:. `DONE.`
 
-2.  Home page will have a navbar, banner/slider, services, and footer.Implement `active routes` on NavBar.
+2.  Home page will have a navbar, banner/slider, services, and footer.Implement `active routes` on NavBar. `DONE.`
 
-3.  Add `two extra sections` in the home page in addition to the 4 sections mentioned above.
+3.  Add `two extra sections` in the home page in addition to the 4 sections mentioned above. `DONE.`
 
-4.  The Services section will have at least `6 event services`. You can put one or more services in a row based on your design. Each service should have a relevant name, image, price, short description and a specific button.
+4.  The Services section will have at least `6 event services`. You can put one or more services in a row based on your design. Each service should have a relevant name, image, price, short description and a specific button. `DONE.`
 
-5.  Clicking on the specific button will take the user to the service detail route. Each route should display detailed information of the service. What you will include in the detailed information is entirely upto you but make sure it is relevant.
+5.  Clicking on the specific button will take the user to the service detail route. Each route should display detailed information of the service. What you will include in the detailed information is entirely upto you but make sure it is relevant. `DONE.`
 
-6.  The service detail route will be a private/protected route. Please make sure that if the user is not logged in, the private route redirects to the login page.
+6.  The service detail route will be a private/protected route. Please make sure that if the user is not logged in, the private route redirects to the login page. `PENDING.`
 
-7.  You Must implement Email and password based Authentication. This means, you will have to implement the Registration and the login page. Users should be able to toggle between Login and Registration view .`Upon successful login or registration, you must show a toast/alert. Do not use the browser alert`.`
+7.  You Must implement Email and password based Authentication. This means, you will have to implement the Registration and the login page. Users should be able to toggle between Login and Registration view .`Upon successful login or registration, you must show a toast/alert. Do not use the browser alert`. `DONE.`
 
-    > :warning: `Note:` Do not enforce `forget or reset password feature` and the `email verification method`, as it will inconvenience the examiner. If you want, you can add email verification/forget the password after receiving the assignment result.
+    > :warning: `Note:` Do not enforce `forget or reset password feature` and the `email verification method`, as it will inconvenience the examiner. If you want, you can add email verification/forget the password after receiving the assignment result. `DONE.`
 
     On the Registration page, display errors when:
 
@@ -60,6 +60,8 @@ Your website has to be related to event management. Here, we have given you a li
          - don't have a capital letter
          - don't have a special character
 
+    `DONE.`
+
     On the Login page, display errors when:
 
         - password doesn't match
@@ -67,15 +69,17 @@ Your website has to be related to event management. Here, we have given you a li
 
     `You can take the error message from firebase`. You can show the error below the input fields or via alert/toast. `If you use alert/toast, do not implement the browser alert`.
 
-8.  Also, implement at least `one extra login` which could be (facebook, github, google, etc).
+       `DONE.`
 
-9.  After reloading the page of a private route, the user should not be redirected to the login page.
+8.  Also, implement at least `one extra login` which could be (facebook, github, google, etc). `DONE.`
 
-10. Once logged in, the user name, profile picture and the logout button should appear on the header. If the user clicks on the logout button, make sure to log him/her out.
+9.  After reloading the page of a private route, the user should not be redirected to the login page.    `PENDING.`
 
-11. Add two more routes. Relevant to your website. These two routes will be private. You can put anything relevant to your site on these two routes.
+10. Once logged in, the user name, profile picture and the logout button should appear on the header. If the user clicks on the logout button, make sure to log him/her out.    `DONE.`
 
-12. Add a 404 page (not found page)
+11. Add two more routes. Relevant to your website. These two routes will be private. You can put anything relevant to your site on these two routes.    `PENDING.`
+
+12. Add a 404 page (not found page)    `PENDING.`
 
 ### :gift: Bonus Requirements:
 

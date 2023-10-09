@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 import { createContext } from "react";
 import { useEffect, useState } from "react";
 import { auth } from "../firebase/firebase.config";
@@ -25,13 +25,40 @@ const AuthContext = ({children}) => {
           return createUserWithEmailAndPassword(auth, email, password);
             }
 
+        // User Login with Email & Pass
+        const loginUser = (email, password) => {
+            setLoading(true)
+            return signInWithEmailAndPassword(auth, email, password)
+        }
+ 
+        // User Login With Google
+
+        const googleSignIn = () => { 
+            setLoading(true)
+        const provider = new GoogleAuthProvider;
+         return signInWithPopup(auth, provider)}
+
+         // Log Out
+
+         const logOut = () => {
+            setLoading(true)
+           return signOut(auth)
+         }
+
+
         // OnAuthStateChanged
         useEffect( () => {
-            
+            const unSub = onAuthStateChanged(auth, (user) => {
+                setLoading(false)
+                setUser(user)
+            });
+            return () => {
+                unSub()
+            }
         } , [])
 
 
-      const value = {services, registerUser, loading, user}
+      const value = {services, registerUser, loginUser, loading, user, googleSignIn, logOut}
 
     return (
         <AuthProvider.Provider value={value}>

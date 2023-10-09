@@ -1,13 +1,17 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-
+import { useContext } from "react";
+import { AuthProvider } from "../../../../context/AuthContext";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthProvider);
+  // console.log(user.photoURL);
+
   const routes = [
     {
       id: 0,
       path: "/",
-      name: "Home"
+      name: "Home",
     },
     {
       id: 1,
@@ -31,19 +35,27 @@ const Navbar = () => {
     },
   ];
 
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(true);
   const HandleDrawer = () => {
-    setOpen(!open)
-  }
+    setOpen(!open);
+  };
 
-  const openClass = open ? "block" : "hidden"
+  const openClass = open ? "block" : "hidden";
+
+  const HandleLogOut = () => {
+    logOut()
+    .then()
+    .catch()
+  }
 
   return (
     <>
       <nav className="navbar items-center bg-transparent text-white lg:px-24 lg:py-6">
-        
         <div className="navbar-start">
-          <NavLink to="/" className="btn btn-ghost normal-case text-xl focus:ring-0">
+          <NavLink
+            to="/"
+            className="btn btn-ghost normal-case text-xl focus:ring-0"
+          >
             <img
               className="w-28 lg:w-32 relative -top-8 lg:-top-10"
               src="https://i.ibb.co/G0C6Lkk/N-2-removebg-preview.png"
@@ -63,21 +75,50 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end hidden lg:flex gap-3">
-        {/* <span className="bg-white p-1 rounded-full"><img className="w-[40px] h-[40px]" src="/public/assets/apple-11.svg" alt="" /></span>
-          <span className="text-[10px]">abcodjidhi@gmail.com</span> */}
-          <NavLink>
+          {user &&
+            <>
+            <span className="bg-white p-1 rounded-full">
+              <img
+                className="w-[40px] h-[40px] rounded-full"
+                src={user?.photoURL && user.photoURL}
+                alt="" />
+            </span><span className="text-[10px]">
+                {user?.displayName && user.displayName}
+              </span>
+              </>}
+
+          {!user ?
+          <NavLink to="/login">
             <button className="border-white border-[1.5px] px-3 py-1 rounded-sm text-xs">
               Log In
             </button>
           </NavLink>
+          :
+          <button onClick={HandleLogOut}
+          className="border-white border-[1.5px] px-3 py-1 rounded-sm text-xs">
+              Log Out
+            </button>}
+
         </div>
 
         {/* Dropdown for smaller screens */}
-        
+
         <div className="navbar-end lg:hidden">
+          <div className="flex gap-2 mr-2 items-center">
+            <span className="bg-white p-1 rounded-full">
+              <img
+                className="w-[28px] h-[28px] rounded-full"
+                src={user?.photoURL && user.photoURL}
+                alt=""
+              />
+            </span>
+            <span className="text-[10px]">
+              {user?.displayName && user.displayName}
+            </span>
+          </div>
+
           <div className="dropdown dropdown-left">
-            <button onClick={HandleDrawer}
-             tabIndex={0} className="lg:hidden">
+            <button onClick={HandleDrawer} tabIndex={0} className="lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -111,7 +152,6 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-
       </nav>
     </>
   );
